@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #9AB3F5;
+    --primary-color: #04293A;
 }
 
 .border-primary {
@@ -17,7 +17,7 @@
     margin: auto;
 }
 .bg-primary {
-    background: #B8E4F0 !important;
+    background: var(--primary-color) !important;
 }
 
 
