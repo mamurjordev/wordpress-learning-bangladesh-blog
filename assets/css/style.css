@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #9AB3F5;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+/* Typography */
+.btn-check:focus + .btn, .btn:focus {
+	box-shadow: none;
+}
+.w-max {
+    width: max-content;
+}
+.mx-auto {
+    margin: auto;
+}
+.bg-primary {
+    background: #B8E4F0 !important;
+}
+
+
+/* Styles */
+.header-wrap {
+    gap: 20px;
+}
+
+#main-nav .navbar-nav .nav-item {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.search-bar input {
+    right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.search-input:focus {
+    outline: none;
+}
+.search-input-btn {
+    right: 5px;
+    top: 3px;
+}
+.left-panel {
+    width: 400px;
+	height: 86.5vh;
+    position: fixed;
+	overflow-y: scroll;
+}
+.right-panel {
+    width: 80%;
+}
