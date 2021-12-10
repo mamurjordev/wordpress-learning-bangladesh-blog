@@ -19,8 +19,26 @@
 .bg-primary {
     background: var(--primary-color) !important;
 }
+.bg-light {
+    background: #F3F1F5;
+}
 
-
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 /* Styles */
 .header-wrap {
     gap: 20px;
@@ -51,4 +69,20 @@
 }
 .right-panel {
     width: 80%;
+}
+.topic-wrapper {
+    height: 95.7vh;
+    overflow-y: scroll;
+    position: sticky;
+    top: 40px;
+}
+
+.topics li a {
+    color: #000;
+    transition: .4s;
+}
+.topics li a:hover,
+.topics li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
 }
