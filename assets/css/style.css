@@ -35,7 +35,9 @@ p {
     line-height: 28px;
     color: rgb(43, 43, 43);
 }
-
+input:focus {
+    outline: none;
+}
 .border-primary {
     border-color: var(--primary-color) !important;
 }
