@@ -112,8 +112,6 @@ aside.sticky-top {
     right: 5px;
     top: 3px;
 }
-
-
 .topic-wrapper:hover {
     overflow-y: scroll;
 }
