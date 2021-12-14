@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Bangla Font -->
+    <link href="https://fonts.maateen.me/bangla/font.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
     <!-- Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -15,106 +25,210 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <header class="border-top border-3 border-primary px-3 py-3 bg-light shadow-sm">
+    <header class="border-top border-3 border-primary px-3 py-3 shadow-sm">
         <div class="container-fluid">
             <div class="row">
-                <div class="d-flex header-wrap">
+                <div class="d-flex justify-content-between ps-2 pe-0">
                     <a href="index.html" class="align-self-center text-decoration-none text-dark">
-                        <h5 class="text-capitalize fw-bolder m-0 border-end pe-4">wordpress learning bangladesh</h5>
+                        <h5 class="text-capitalize fw-bolder m-0">ওয়ার্ডপ্রেস লার্নিং বাংলাদেশ</h5>
                     </a>
 
-                    <div class="flex-grow-1 border-end pe-4">
-                        <div class="search-bar position-relative">
-                            <input type="search" class="search-input w-100 border rounded-1 px-2" name="" id="" placeholder="Search">
-                            <button class="search-input-btn position-absolute btn py-0 px-1"><i class="ri-search-line"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex">
-                        <input type="text">
+                    <div class="social w-max ms-xl-auto">
+                        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#!"><i class="fab fa-instagram"></i></a>
+                        <a href="#!"><i class="fab fa-twitter"></i></a>
+                        <a href="#!"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="px-3 bg-primary sticky-top">
-        <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">HTML</a>
-                    <a class="nav-item nav-link" href="#">CSS</a>
-                    <a class="nav-item nav-link" href="#">JavaScript</a>
-                    <a class="nav-item nav-link" href="#">jQuery</a>
-                    <a class="nav-item nav-link" href="#">php</a>
-                    <a class="nav-item nav-link" href="#">MySQL</a>
-                    <a class="nav-item nav-link active" href="#">WordPress</a>
-                </div>
+    <div class="px-3 bg-light sticky-top d-flex justify-content-between main-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid px-0">
+              <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">JavaScript</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">jQuery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">PHP</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      WordPress
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Theme Customization</a></li>
+                      <li><a class="dropdown-item" href="#">Theme Development</a></li>
+                      <li><a class="dropdown-item" href="#">Plugin Development</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
+        <form action="" method="get" class="">
+            <input type="search" class="my-2">
+        </form>
     </div>
 
-    <main>
-        <div class="container-fluid ps-0">
-            <div class="row">
-                <div class="col-md-2 pe-0 bg-light topic-wrapper">
-                    <div class="mx-4 mt-3 mb-2">
-                        <input type="text" class="search-input border px-2 py-1 w-100" placeholder="Search by topics">
-                    </div>
+    <div class="container-fluid ps-0 py-4">
+        <div class="row">
+            <div class="col-3">
+                <aside class="sticky-top">
                     <ul class="topics d-block list-group list-unstyled">
                         <li>
-                            <a href="#!" class="ps-4 py-1 d-block text-decoration-none">What is wordpress?</a>
+                            <a href="#!" class="ps-4 py-1 d-block text-decoration-none">এইচটিএমএল কি?</a>
                         </li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Usage and Reliability</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="active ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Usage and Reliability</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">এটি কিভাবে এসেছে?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">লরেম ইপ্সলাম কি?</a></li>
+                        <li><a href="#!" class="active ps-4 py-1 d-block text-decoration-none">পাইথন একটা সাপের নাম</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন ওয়েবসাইটের কালার করে</a></li>
+                        <li>
+                            <a href="#!" class="ps-4 py-1 d-block text-decoration-none">এইচটিএমএল কি?</a>
+                        </li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">এটি কিভাবে এসেছে?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">লরেম ইপ্সলাম কি?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন একটা সাপের নাম</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন ওয়েবসাইটের কালার করে</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">এটি কিভাবে এসেছে?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">লরেম ইপ্সলাম কি?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন একটা সাপের নাম</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন ওয়েবসাইটের কালার করে</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">এটি কিভাবে এসেছে?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">লরেম ইপ্সলাম কি?</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন একটা সাপের নাম</a></li>
+                        <li><a href="#!" class="ps-4 py-1 d-block text-decoration-none">পাইথন ওয়েবসাইটের কালার করে</a></li>
                     </ul>
-                </div>
-    
-                <div class="col-md-10 p-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum fugit asperiores fuga, perferendis consequatur laudantium amet nisi voluptatum officiis, ipsum iusto accusamus. Corrupti beatae in possimus ea harum deleniti vitae. Iure quisquam, vitae a numquam provident, assumenda quaerat esse nesciunt dignissimos earum laudantium cupiditate voluptates odit amet quam maiores dicta eligendi delectus, eum dolorum necessitatibus sint! Repellat, molestiae! Rerum ipsum maxime porro voluptate ratione error doloremque praesentium, deleniti atque amet reprehenderit, dolor, sequi veritatis quis animi odit! Explicabo necessitatibus, fugit quaerat cupiditate reprehenderit adipisci, sunt quibusdam blanditiis amet saepe labore deleniti, magnam non rem aperiam voluptatum sed eaque exercitationem eum accusantium sequi consequatur maiores mollitia. Accusantium quaerat minus earum voluptatem quae incidunt omnis sed veniam laudantium mollitia, laboriosam nobis tempore! Necessitatibus, sequi harum. Saepe sapiente ipsum accusantium modi! Ipsam magnam sequi sit doloremque alias officia itaque, autem nesciunt recusandae minus id corrupti exercitationem numquam neque expedita optio! Sunt explicabo porro tempore distinctio est eaque sint rem nisi qui numquam? Quam temporibus pariatur laudantium itaque veritatis mollitia natus neque veniam molestias error harum consequatur architecto ullam nihil quia quo tempora in, aliquid cumque sed delectus provident atque dolorem eveniet. Iusto praesentium aliquam dicta quo fugit, illo dolorem amet unde voluptatibus atque optio, sunt enim aspernatur facere, assumenda veniam deserunt perferendis perspiciatis aut natus obcaecati rem. Dolore dolorem asperiores nam nobis facere labore iusto dolor, neque tenetur hic totam laboriosam, error inventore ipsam quas! Quos suscipit qui nostrum. Ea, excepturi officia impedit eligendi maiores, quaerat adipisci alias nulla culpa libero ipsa modi voluptates harum similique non temporibus, obcaecati omnis aliquid in aspernatur necessitatibus voluptas earum? Suscipit nostrum recusandae esse perferendis quisquam accusamus, minus, consequatur ab accusantium perspiciatis autem fugiat dolores debitis atque soluta aliquam molestias. Atque modi rerum pariatur tempora excepturi minus provident, earum delectus dolor sequi officiis at nostrum impedit nesciunt similique magni, ratione autem? Repudiandae eveniet in obcaecati minus esse labore natus, architecto repellat officia, iusto, culpa earum asperiores quisquam optio? Ipsum eum porro libero quo laudantium temporibus eos modi perspiciatis quae deleniti architecto aperiam soluta facilis assumenda reprehenderit, ipsa asperiores distinctio perferendis. Laboriosam, vero voluptate veritatis maiores laborum recusandae possimus nesciunt autem corporis doloremque cupiditate quis similique quod deserunt iste sapiente sed placeat delectus quisquam exercitationem enim iusto. Alias facere accusamus dolore blanditiis quidem temporibus maiores officia ut praesentium perferendis suscipit tempore, reiciendis incidunt aperiam. Quidem alias maxime tempore illum dicta? Sint necessitatibus doloribus delectus libero, iste cumque placeat quae blanditiis. Aliquam est reprehenderit consectetur tempore magnam perferendis quo explicabo nobis quod. Eligendi veritatis eum blanditiis esse, laboriosam voluptatem natus reprehenderit cumque, cupiditate ullam quos dignissimos eos ratione voluptas quibusdam fugit? Non natus hic, dolores reiciendis nesciunt aliquid asperiores blanditiis voluptate, iure, ducimus praesentium aspernatur corporis officia error impedit. Ea facilis reiciendis expedita repellendus cum aperiam tempora vel quas hic aspernatur nihil soluta, libero odio aliquid deserunt qui officia quae reprehenderit quidem optio necessitatibus. Totam ipsa nam accusamus quae architecto nesciunt, possimus nemo officia error? Non sit dolore aut id officia nihil? Ullam modi ea dolore est sit eos cupiditate. Eum neque alias temporibus, molestias cum deserunt corporis velit a nobis omnis adipisci earum iure quod excepturi ex dolores, laudantium officia ipsum quia assumenda accusamus et! Asperiores incidunt error voluptas sunt laborum fugit voluptate dolores corrupti facilis. Dolorum, expedita provident! Laborum excepturi repudiandae aut, reiciendis dolores quae sapiente accusamus officia ipsum asperiores animi perspiciatis illum. Iste officiis, quibusdam ut dolor qui consequuntur autem itaque minima veritatis! Quibusdam ea magnam fugiat odio eveniet, ratione autem corrupti laboriosam aperiam laborum iste atque distinctio suscipit explicabo accusamus vero omnis hic nam saepe at libero, consequatur minus. Voluptatum quae at odio mollitia modi? Quae ipsam harum aliquam totam sequi! Et, nam excepturi, impedit nesciunt dicta officiis, quaerat voluptatum ullam dolores soluta cupiditate perspiciatis architecto odit! Quo corrupti rerum, possimus deleniti sunt hic eos saepe commodi odit repellendus eaque magnam aut voluptate quae veritatis ducimus voluptatem dolor totam mollitia, tenetur expedita nesciunt id dicta! Earum aliquid amet illo asperiores quasi numquam dolorum beatae magni minima. Fuga fugit, laboriosam numquam quae cupiditate cumque, explicabo autem illo debitis inventore error itaque quam repudiandae necessitatibus iste porro possimus libero est laborum quisquam quas ad. Assumenda sed, eius libero a quisquam est corrupti pariatur incidunt commodi voluptatum deleniti? Laudantium quaerat accusantium aliquam eaque voluptatem quam, odio earum voluptate accusamus non. Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi, nesciunt laudantium iste! Iure quae aspernatur, est placeat, exercitationem tempore autem saepe mollitia perspiciatis nemo distinctio sint. Ut debitis earum ipsa quidem aspernatur provident eos qui consectetur dolores dolorem! Exercitationem veniam nobis nemo itaque, quaerat explicabo, cupiditate vel laboriosam mollitia omnis recusandae illo accusamus, quae provident debitis dignissimos aut numquam eveniet consequuntur perspiciatis possimus in doloribus odit! Tempore, hic voluptatibus earum ipsum accusamus quia dignissimos consequatur quos et neque expedita iure! Laudantium quis eum quo non distinctio fugiat accusamus. Doloribus incidunt eius totam saepe nam quaerat quos fuga explicabo velit fugiat provident veniam esse error deleniti officia, aliquid doloremque magnam minus architecto molestiae aliquam suscipit! Hic corporis maiores saepe optio accusamus sit architecto nam voluptate inventore nobis, sapiente quo laboriosam magnam fugit. Unde odio eligendi cumque officiis earum, impedit vero. Eligendi, aperiam. A porro blanditiis sit, quisquam numquam in, eligendi repellendus unde quis placeat optio. Voluptatibus molestias sint quas omnis, consequatur facere reiciendis laboriosam! Ab quod in libero molestias necessitatibus quaerat id, expedita consequatur dolores quibusdam eius vitae nemo, doloremque saepe? Illum eligendi officia eius dolorum nostrum explicabo ea blanditiis accusantium ratione nobis delectus odio iusto non earum nesciunt quia repellat accusamus, nam veritatis cupiditate autem dicta officiis? Ullam ipsa aliquid tempore voluptates sunt tempora cumque iusto minima delectus architecto! Nam eaque architecto ducimus, aspernatur, est porro fuga, modi ab amet consequatur exercitationem? Eos iure dicta maxime ipsam voluptatem culpa. Soluta, aliquam eius aspernatur blanditiis voluptatum et, similique deleniti iste dolorem sit sapiente neque facere vel harum est porro, voluptates qui iusto fuga quasi id perspiciatis veniam. Et commodi natus blanditiis maiores saepe maxime assumenda quod sit, qui officiis, provident autem debitis nisi.
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum fugit asperiores fuga, perferendis consequatur laudantium amet nisi voluptatum officiis, ipsum iusto accusamus. Corrupti beatae in possimus ea harum deleniti vitae. Iure quisquam, vitae a numquam provident, assumenda quaerat esse nesciunt dignissimos earum laudantium cupiditate voluptates odit amet quam maiores dicta eligendi delectus, eum dolorum necessitatibus sint! Repellat, molestiae! Rerum ipsum maxime porro voluptate ratione error doloremque praesentium, deleniti atque amet reprehenderit, dolor, sequi veritatis quis animi odit! Explicabo necessitatibus, fugit quaerat cupiditate reprehenderit adipisci, sunt quibusdam blanditiis amet saepe labore deleniti, magnam non rem aperiam voluptatum sed eaque exercitationem eum accusantium sequi consequatur maiores mollitia. Accusantium quaerat minus earum voluptatem quae incidunt omnis sed veniam laudantium mollitia, laboriosam nobis tempore! Necessitatibus, sequi harum. Saepe sapiente ipsum accusantium modi! Ipsam magnam sequi sit doloremque alias officia itaque, autem nesciunt recusandae minus id corrupti exercitationem numquam neque expedita optio! Sunt explicabo porro tempore distinctio est eaque sint rem nisi qui numquam? Quam temporibus pariatur laudantium itaque veritatis mollitia natus neque veniam molestias error harum consequatur architecto ullam nihil quia quo tempora in, aliquid cumque sed delectus provident atque dolorem eveniet. Iusto praesentium aliquam dicta quo fugit, illo dolorem amet unde voluptatibus atque optio, sunt enim aspernatur facere, assumenda veniam deserunt perferendis perspiciatis aut natus obcaecati rem. Dolore dolorem asperiores nam nobis facere labore iusto dolor, neque tenetur hic totam laboriosam, error inventore ipsam quas! Quos suscipit qui nostrum. Ea, excepturi officia impedit eligendi maiores, quaerat adipisci alias nulla culpa libero ipsa modi voluptates harum similique non temporibus, obcaecati omnis aliquid in aspernatur necessitatibus voluptas earum? Suscipit nostrum recusandae esse perferendis quisquam accusamus, minus, consequatur ab accusantium perspiciatis autem fugiat dolores debitis atque soluta aliquam molestias. Atque modi rerum pariatur tempora excepturi minus provident, earum delectus dolor sequi officiis at nostrum impedit nesciunt similique magni, ratione autem? Repudiandae eveniet in obcaecati minus esse labore natus, architecto repellat officia, iusto, culpa earum asperiores quisquam optio? Ipsum eum porro libero quo laudantium temporibus eos modi perspiciatis quae deleniti architecto aperiam soluta facilis assumenda reprehenderit, ipsa asperiores distinctio perferendis. Laboriosam, vero voluptate veritatis maiores laborum recusandae possimus nesciunt autem corporis doloremque cupiditate quis similique quod deserunt iste sapiente sed placeat delectus quisquam exercitationem enim iusto. Alias facere accusamus dolore blanditiis quidem temporibus maiores officia ut praesentium perferendis suscipit tempore, reiciendis incidunt aperiam. Quidem alias maxime tempore illum dicta? Sint necessitatibus doloribus delectus libero, iste cumque placeat quae blanditiis. Aliquam est reprehenderit consectetur tempore magnam perferendis quo explicabo nobis quod. Eligendi veritatis eum blanditiis esse, laboriosam voluptatem natus reprehenderit cumque, cupiditate ullam quos dignissimos eos ratione voluptas quibusdam fugit? Non natus hic, dolores reiciendis nesciunt aliquid asperiores blanditiis voluptate, iure, ducimus praesentium aspernatur corporis officia error impedit. Ea facilis reiciendis expedita repellendus cum aperiam tempora vel quas hic aspernatur nihil soluta, libero odio aliquid deserunt qui officia quae reprehenderit quidem optio necessitatibus. Totam ipsa nam accusamus quae architecto nesciunt, possimus nemo officia error? Non sit dolore aut id officia nihil? Ullam modi ea dolore est sit eos cupiditate. Eum neque alias temporibus, molestias cum deserunt corporis velit a nobis omnis adipisci earum iure quod excepturi ex dolores, laudantium officia ipsum quia assumenda accusamus et! Asperiores incidunt error voluptas sunt laborum fugit voluptate dolores corrupti facilis. Dolorum, expedita provident! Laborum excepturi repudiandae aut, reiciendis dolores quae sapiente accusamus officia ipsum asperiores animi perspiciatis illum. Iste officiis, quibusdam ut dolor qui consequuntur autem itaque minima veritatis! Quibusdam ea magnam fugiat odio eveniet, ratione autem corrupti laboriosam aperiam laborum iste atque distinctio suscipit explicabo accusamus vero omnis hic nam saepe at libero, consequatur minus. Voluptatum quae at odio mollitia modi? Quae ipsam harum aliquam totam sequi! Et, nam excepturi, impedit nesciunt dicta officiis, quaerat voluptatum ullam dolores soluta cupiditate perspiciatis architecto odit! Quo corrupti rerum, possimus deleniti sunt hic eos saepe commodi odit repellendus eaque magnam aut voluptate quae veritatis ducimus voluptatem dolor totam mollitia, tenetur expedita nesciunt id dicta! Earum aliquid amet illo asperiores quasi numquam dolorum beatae magni minima. Fuga fugit, laboriosam numquam quae cupiditate cumque, explicabo autem illo debitis inventore error itaque quam repudiandae necessitatibus iste porro possimus libero est laborum quisquam quas ad. Assumenda sed, eius libero a quisquam est corrupti pariatur incidunt commodi voluptatum deleniti? Laudantium quaerat accusantium aliquam eaque voluptatem quam, odio earum voluptate accusamus non. Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi, nesciunt laudantium iste! Iure quae aspernatur, est placeat, exercitationem tempore autem saepe mollitia perspiciatis nemo distinctio sint. Ut debitis earum ipsa quidem aspernatur provident eos qui consectetur dolores dolorem! Exercitationem veniam nobis nemo itaque, quaerat explicabo, cupiditate vel laboriosam mollitia omnis recusandae illo accusamus, quae provident debitis dignissimos aut numquam eveniet consequuntur perspiciatis possimus in doloribus odit! Tempore, hic voluptatibus earum ipsum accusamus quia dignissimos consequatur quos et neque expedita iure! Laudantium quis eum quo non distinctio fugiat accusamus. Doloribus incidunt eius totam saepe nam quaerat quos fuga explicabo velit fugiat provident veniam esse error deleniti officia, aliquid doloremque magnam minus architecto molestiae aliquam suscipit! Hic corporis maiores saepe optio accusamus sit architecto nam voluptate inventore nobis, sapiente quo laboriosam magnam fugit. Unde odio eligendi cumque officiis earum, impedit vero. Eligendi, aperiam. A porro blanditiis sit, quisquam numquam in, eligendi repellendus unde quis placeat optio. Voluptatibus molestias sint quas omnis, consequatur facere reiciendis laboriosam! Ab quod in libero molestias necessitatibus quaerat id, expedita consequatur dolores quibusdam eius vitae nemo, doloremque saepe? Illum eligendi officia eius dolorum nostrum explicabo ea blanditiis accusantium ratione nobis delectus odio iusto non earum nesciunt quia repellat accusamus, nam veritatis cupiditate autem dicta officiis? Ullam ipsa aliquid tempore voluptates sunt tempora cumque iusto minima delectus architecto! Nam eaque architecto ducimus, aspernatur, est porro fuga, modi ab amet consequatur exercitationem? Eos iure dicta maxime ipsam voluptatem culpa. Soluta, aliquam eius aspernatur blanditiis voluptatum et, similique deleniti iste dolorem sit sapiente neque facere vel harum est porro, voluptates qui iusto fuga quasi id perspiciatis veniam. Et commodi natus blanditiis maiores saepe maxime assumenda quod sit, qui officiis, provident autem debitis nisi.
+                </aside>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-10 mx-auto">
+                        <main class="articel-wrapper">
+                            <div class="article">
+                                <h2>এইচটিএমএল যে বানাইছে তার নানার নাম কি ?</h2>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে, যখন একটি অজানা প্রিন্টার টাইপের একটি গ্যালি নিয়েছিল এবং একটি টাইপ নমুনা বই তৈরি করতে এটিকে স্ক্র্যাম্বল করেছিল। এটি শুধুমাত্র পাঁচ শতক নয়, ইলেকট্রনিক টাইপসেটিং-এ লাফ দিয়েও টিকে আছে, যা মূলত অপরিবর্তিত রয়েছে। এটি 1960-এর দশকে লোরেম ইপসাম প্যাসেজ সম্বলিত লেট্রাসেট শীট প্রকাশের মাধ্যমে এবং অতি সম্প্রতি লোরেম ইপসামের সংস্করণ সহ অ্যালডাস পেজমেকারের মতো ডেস্কটপ প্রকাশনা সফ্টওয়্যারের মাধ্যমে জনপ্রিয় হয়েছিল।</p>
+                    
+                                <h2>কিভাবে এটি প্রতিষ্ঠা পেল?</h2>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <h2>এইচটিএমএল যে বানাইছে তার নানার নাম কি ?</h2>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে, যখন একটি অজানা প্রিন্টার টাইপের একটি গ্যালি নিয়েছিল এবং একটি টাইপ নমুনা বই তৈরি করতে এটিকে স্ক্র্যাম্বল করেছিল। এটি শুধুমাত্র পাঁচ শতক নয়, ইলেকট্রনিক টাইপসেটিং-এ লাফ দিয়েও টিকে আছে, যা মূলত অপরিবর্তিত রয়েছে। এটি 1960-এর দশকে লোরেম ইপসাম প্যাসেজ সম্বলিত লেট্রাসেট শীট প্রকাশের মাধ্যমে এবং অতি সম্প্রতি লোরেম ইপসামের সংস্করণ সহ অ্যালডাস পেজমেকারের মতো ডেস্কটপ প্রকাশনা সফ্টওয়্যারের মাধ্যমে জনপ্রিয় হয়েছিল।</p>
+                    
+                                <h2>কিভাবে এটি প্রতিষ্ঠা পেল?</h2>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <h2>এইচটিএমএল যে বানাইছে তার নানার নাম কি ?</h2>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে, যখন একটি অজানা প্রিন্টার টাইপের একটি গ্যালি নিয়েছিল এবং একটি টাইপ নমুনা বই তৈরি করতে এটিকে স্ক্র্যাম্বল করেছিল। এটি শুধুমাত্র পাঁচ শতক নয়, ইলেকট্রনিক টাইপসেটিং-এ লাফ দিয়েও টিকে আছে, যা মূলত অপরিবর্তিত রয়েছে। এটি 1960-এর দশকে লোরেম ইপসাম প্যাসেজ সম্বলিত লেট্রাসেট শীট প্রকাশের মাধ্যমে এবং অতি সম্প্রতি লোরেম ইপসামের সংস্করণ সহ অ্যালডাস পেজমেকারের মতো ডেস্কটপ প্রকাশনা সফ্টওয়্যারের মাধ্যমে জনপ্রিয় হয়েছিল।</p>
+                    
+                                <h2>কিভাবে এটি প্রতিষ্ঠা পেল?</h2>
+                    
+                                <p>লরেম ইপ্সাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম 1500 এর দশক থেকে শিল্পের মানক ডামি টেক্সট হয়েছে</p>
+                            </div>
+                        </main>
+                    </div>
                 </div>
             </div>
+            <div class="col-3">
+                <aside class="table-of-contents sticky-top">
+                    <h6 class="">এই পৃষ্ঠায় যা যা আছে -</h6>
+            
+                    <ul class="toc-wrapper list-unstyled p-0">
+                        <li>
+                            <a href="#!" class="py-1 d-block text-decoration-none">এইচটিএমএল কি?</a>
+                        </li>
+                        <li><a href="#!" class="py-1 d-block text-decoration-none">এটি কিভাবে এসেছে?</a></li>
+                        <li><a href="#!" class="py-1 d-block text-decoration-none">লরেম ইপ্সলাম কি?</a></li>
+                        <li><a href="#!" class="py-1 d-block text-decoration-none">পাইথন একটা সাপের নাম</a></li>
+                        <li><a href="#!" class="py-1 d-block text-decoration-none">পাইথন ওয়েবসাইটের কালার করে</a></li>
+                    </ul>
+                </aside>
+            </div>
         </div>
-    </main>
+    </div>
+
+    
+    
+    
+
+    <footer id="site-footer" class="bg-primary px-4">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-sm-6 col-md-4 col-xl-3 position-relative">
+                    <a href="#!" class="fs-5 fw-light text-decoration-none text-light mb-2">
+                        WordPress Learning Bangladesh
+                    </a>
+                    <p class="text-muted text-sm">
+                        voluptate accusamus non. Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi, Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi,
+                    </p>
+
+                    <span class="vertical-separator d-none d-lg-block" area-hidden="true"></span>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 position-relative">
+                    <h5>Quick Links</h5>
+                    <p>
+                        voluptate accusamus non. Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi,
+                    </p>
+
+                    <span class="vertical-separator d-none d-lg-block" area-hidden="true"></span>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 position-relative">
+                    <h5>Quick Links</h5>
+                    <p>
+                        voluptate accusamus non. Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi,
+                    </p>
+
+                    <span class="vertical-separator d-none d-lg-block" area-hidden="true"></span>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <h5>Quick Links</h5>
+                    <p>
+                        voluptate accusamus non. Nesciunt, provident natus! Explicabo, blanditiis corrupti dicta totam sapiente voluptatibus perferendis vero, quisquam quasi,
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row py-2">
+                <p class="text-center text-sm text-light">
+                    Copyright @ WordPress Learning Bangladesh
+                </p>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

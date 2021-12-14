@@ -1,5 +1,39 @@
 :root {
     --primary-color: #04293A;
+    --font-golos: 'Golos-UI';
+}
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: #2d3342;
+    letter-spacing: -.025em;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 5px;
+}
+
+h6 {
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: 'Bangla', sans-serif;
+    color: rgba(38,38,38,var(--tw-text-opacity));
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(43, 43, 43);
 }
 
 .border-primary {
@@ -7,6 +41,9 @@
 }
 
 /* Typography */
+.text-sm {
+    font-size: 14px;
+}
 .btn-check:focus + .btn, .btn:focus {
 	box-shadow: none;
 }
@@ -43,7 +80,21 @@
 .header-wrap {
     gap: 20px;
 }
-
+aside.sticky-top {
+    top: 70px;
+}
+.social a i {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+.main-navbar {
+    z-index: 9999;
+}
 #main-nav .navbar-nav .nav-item {
     padding-top: 0;
     padding-bottom: 0;
@@ -61,28 +112,52 @@
     right: 5px;
     top: 3px;
 }
-.left-panel {
-    width: 400px;
-	height: 86.5vh;
-    position: fixed;
-	overflow-y: scroll;
-}
-.right-panel {
-    width: 80%;
-}
-.topic-wrapper {
-    height: 95.7vh;
+
+
+.topic-wrapper:hover {
     overflow-y: scroll;
-    position: sticky;
-    top: 40px;
 }
 
 .topics li a {
     color: #000;
-    transition: .4s;
+    transition: .2s;
+}
+
+.topics li a:hover,
+.topics li a.active {
+    color: var(--primary-color);
+    border-left: 5px solid var(--primary-color);
 }
 .topics li a:hover,
 .topics li a.active {
-    color: #fff;
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+}
+#site-footer hr {
+	background-color: transparent;
+	background-image: linear-gradient(90deg,rgba(206,211,246,0) 0,#CED3F6 38%,#CED3F6 64%,rgba(206,211,246,0) 99%);
+	opacity: .3;
+}
+
+#site-footer .vertical-separator {
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: transparent;
+	background-image: linear-gradient(0deg,rgba(206,211,246,0) 0,#CED3F6 38%,#CED3F6 64%,rgba(206,211,246,0) 99%);
+	opacity: .3;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.toc-wrapper li a {
+    color: #000;
+}
+.navbar-light .navbar-toggler {
+	border: none;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
 }
