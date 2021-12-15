@@ -1,21 +1,13 @@
 @media only screen and (max-width: 576px) {
-    .left-panel {
-        width: 90%;
-        height: 100%;
-        position: absolute;
-        transform: translateX(-32rem);
-        transition: .4s;
-        background-color: #fff;
-    }
+    
 }
 
 @media only screen and (min-width: 577px) and (max-width: 991px) {
-    .left-panel {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        transition: .4s;
-        transform: translateX(-32rem);
-        background-color: #fff;
+    
+}
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
     }
 }
