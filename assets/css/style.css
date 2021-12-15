@@ -55,6 +55,9 @@ input:focus {
     font-size: 48px;
     line-height: 60px;
 }
+.w-70 {
+    width: 70px;
+}
 .h-400 {
     height: 400px;
 }
