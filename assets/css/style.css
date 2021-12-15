@@ -58,7 +58,9 @@ input:focus {
 .w-max {
     width: max-content;
 }
-
+.bg-light {
+    background-color: var(--gray);
+}
 
 /* Layout Design */
 
@@ -153,4 +155,48 @@ input:focus {
 }
 .topics__item_permalink:hover .topic_title {
     text-decoration: underline;
+}
+
+/**
+ *
+ *  Single Page
+ *
+ **/
+
+ .bg-hero__single {
+     height: 80vh;
+     background-color: var(--primary-color);
+ }
+ .sidebar__list {
+    font-size: 12px;
+    font-family: var(--font-inter);
+    margin-top: .25rem;
+    line-height: 1.7;
+}
+.sidebar__list li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+.sidebar__list li:hover a {
+    text-decoration: underline;
+    color: #000;
+}
+.single__content h3 {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+}
+.single__content h3 a  {
+    line-height: 1;
+    align-self: center;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.single__content h3 a:hover {
+    text-decoration: underline;
+}
+
+.left_panel {
+    position: sticky;
+    top: 30px;
 }
