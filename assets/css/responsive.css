@@ -39,6 +39,9 @@
     .header-content {
         height: 400px;
     }
+    .single-header-content {
+        height: 300px;
+    }
     .cta_contents {
         text-align: left;
     }
