@@ -2,6 +2,7 @@
     --primary-color: #27272E;
     --gray: #e9e9e9;
     --font-inter: 'Inter', sans-serif;
+    --font-bangla: 'SolaimanLipi', serif;
 }
 
 /* Typography */
@@ -21,7 +22,7 @@ h6 {
 }
 
 p {
-    font-family: 'SolaimanLipi', serif;
+    font-family: var(--font-bangla);
     color: rgba(38,38,38,var(--tw-text-opacity));
     font-size: 20px;
     line-height: 28px;
@@ -163,13 +164,22 @@ input:focus {
 }
 
 /* Topics */
-.topics__item {
-    height: 170px;
+.topics_item {
+    height: 100%;
 }
 .topics__item_permalink:hover .topic_title {
     text-decoration: underline;
 }
-
+.topics_content {
+    padding-left: 20px;
+}
+.topic_item_wrap:hover .topic_title {
+    text-decoration: underline;
+}
+.topic_title {
+    font-weight: 400;
+    font-family: var(--font-bangla) !important;
+}
 /**
  *
  *  Single Page
