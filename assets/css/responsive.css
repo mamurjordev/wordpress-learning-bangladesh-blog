@@ -14,10 +14,16 @@
     .header-content {
         height: 400px;
     }
+    .cta_contents {
+        text-align: left;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .header-content {
         height: 400px;
+    }
+    .cta_contents {
+        text-align: left;
     }
 }
 @media only screen and (min-width: 1400px) {
@@ -26,5 +32,8 @@
     }
     .header-content {
         height: 400px;
+    }
+    .cta_contents {
+        text-align: left;
     }
 }

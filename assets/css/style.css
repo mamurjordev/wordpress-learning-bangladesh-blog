@@ -72,6 +72,10 @@ input:focus {
 .btn:active:focus {
 	box-shadow: none;
 }
+.form-control:focus {
+	box-shadow: none;
+}
+
 /* Layout Design */
 
 .bg-hero {
@@ -114,7 +118,9 @@ input:focus {
 .cta__h {
     height: 200px;
 }
-
+.cta_contents {
+    text-align: center;
+}
 /* Contributors */
 .contributors__avatar_item {
     height: 400px;
