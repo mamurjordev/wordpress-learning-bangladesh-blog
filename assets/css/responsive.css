@@ -2,6 +2,12 @@
     .course__grid_title {
         font-size: 16px;
     }
+    .emali_subscription_input {
+        text-align: center;
+    }
+    .topic_title {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
