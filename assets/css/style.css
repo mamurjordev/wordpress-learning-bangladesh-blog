@@ -30,7 +30,12 @@ p {
 input:focus {
     outline: none;
 }
-
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+.navbar-toggler {
+	border: none;
+}
 .border-primary {
     border-color: var(--primary-color) !important;
 }
@@ -61,11 +66,15 @@ input:focus {
 .bg-light {
     background-color: var(--gray);
 }
-
+.btn-check:focus + .btn-outline-light, .btn:focus {
+	box-shadow: none;
+}
+.btn:active:focus {
+	box-shadow: none;
+}
 /* Layout Design */
 
 .bg-hero {
-    height: 500px;
     background-color: var(--primary-color);
     background-image: url('../img/bg10.png');
     background-repeat: no-repeat;
@@ -75,9 +84,7 @@ input:focus {
 .navbar-bg {
     background-color: rgba(0, 0, 0, .3);
 }
-.header-content {
-    height: 400px;
-}
+
 
 .technology__icon svg {
     width: 3.5rem;
