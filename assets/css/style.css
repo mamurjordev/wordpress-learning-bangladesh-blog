@@ -21,7 +21,7 @@ h6 {
 }
 
 p {
-    font-family: 'Bangla', sans-serif;
+    font-family: 'SolaimanLipi', serif;
     color: rgba(38,38,38,var(--tw-text-opacity));
     font-size: 20px;
     line-height: 28px;
@@ -102,7 +102,7 @@ input:focus {
 
 /* Course Grid */
 .course__grid_item {
-    background-color: #f3f3f3;
+    background-color: var(--gray);
 }
 .course__grid_title:hover {
     text-decoration: underline;
