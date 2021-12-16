@@ -135,7 +135,7 @@ input:focus {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background-color: var(--bg-hero);
+    background-color: var(--primary-color);
     border-radius: 100%;
 }
 
@@ -144,7 +144,7 @@ input:focus {
     background-color: var(--primary-color);
 }
 
-.footer.social__icons a i {
+.footer_social__icons a i {
     color: rgba(255,255,255,.25);
     margin-right: 7px;
     text-align: center;
@@ -153,7 +153,7 @@ input:focus {
     font-size: 25px;
     transition: .3s;
 }
-.footer.social__icons a:hover i {
+.footer_social__icons a:hover i {
     color: #f3f3f3
 }
 .footer-line {
