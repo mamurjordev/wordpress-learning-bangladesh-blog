@@ -121,10 +121,10 @@ input:focus {
 .cta_contents {
     text-align: center;
 }
+
+
 /* Contributors */
-.contributors__avatar_item {
-    height: 400px;
-}
+
 .contributors_avatar {
     width: 120px;
 }
